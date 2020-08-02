@@ -1,6 +1,8 @@
 import React from 'react';
 import GlobalStyles from '../../styles/global';
 
+import fake_data from '../../data/fake_data.json';
+
 import PageDefault from '../../components/PageDefault';
 import Vertical from '../../components/Vertical/Index';
 
@@ -11,12 +13,9 @@ function Home() {
     <>
       <PageDefault>
         <S.HomeContainer>
-          <Vertical slug="front">Front-end</Vertical>
-          <Vertical slug="data">Dados</Vertical>
-          <Vertical slug="music">Música</Vertical>
-          <Vertical slug="back">Back-end</Vertical>
-          <Vertical slug="product">Produto</Vertical>
-          <Vertical slug="design">Design</Vertical>
+          {fake_data.category.map((category) => (
+            <Vertical category={category} key={category.slug} slug={category.slug}>{category.name}</Vertical>
+          ))}
         </S.HomeContainer>
       </PageDefault>
       <GlobalStyles />

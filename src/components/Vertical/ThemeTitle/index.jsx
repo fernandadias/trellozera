@@ -42,9 +42,3 @@ function ThemeTitle({ title, videoCount, slug }) {
 }
 
 export default ThemeTitle;
-
-ThemeTitle.propTypes = {
-  title: PropTypes.string.isRequired,
-  videoCount: PropTypes.number.isRequired,
-  slug: PropTypes.string.isRequired,
-};
