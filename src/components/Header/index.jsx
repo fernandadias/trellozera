@@ -16,11 +16,11 @@ function Header() {
         <span>filtrar por: </span>
         <a href="$" className="active">todos</a>
         <a href="$">
-          <FiCircle size={16} />
+          <FiCheckCircle size={16} />
           <span>vistos</span>
         </a>
         <a href="$">
-          <FiCheckCircle size={16} />
+          <FiCircle size={16} />
           <span> não vistos</span>
         </a>
       </S.Filters>

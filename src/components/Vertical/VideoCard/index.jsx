@@ -3,7 +3,16 @@ import { FiCircle, FiCheckCircle } from 'react-icons/fi';
 
 import * as S from './style';
 
+function getYouTubeId(youtubeURL) {
+  return youtubeURL
+    .replace(
+      /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
+      '$7',
+    );
+}
+
 function VideoCard({ video }) {
+  const image = `https://img.youtube.com/vi/${getYouTubeId(video.url)}/hqdefault.jpg`;
   return (
     <S.Card>
       <S.VideoCheck>
@@ -15,7 +24,7 @@ function VideoCard({ video }) {
         {video.title}
       </S.VideoTitle>
       <S.VideoLink href="/">
-        <S.VideoThumb />
+        <S.VideoThumb url={image} />
       </S.VideoLink>
     </S.Card>
   );

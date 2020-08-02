@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import ThemeTitle from './ThemeTitle';
 import VideoCard from './VideoCard';
@@ -6,11 +6,9 @@ import VideoCard from './VideoCard';
 import * as S from './style';
 
 function Vertical({ category }) {
-  const [videoCount, setVideoCount] = useState(category.videos.length);
-
   return (
     <S.VerticalContainer>
-      <ThemeTitle title={category.name} videoCount={videoCount} slug={category.slug} />
+      <ThemeTitle title={category.name} videoCount={2} slug={category.slug} />
       <S.VerticalWrapper>
         {category.videos.map((video, index) => (
           <VideoCard key={index} video={video} />

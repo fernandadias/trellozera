@@ -26,7 +26,7 @@
     {
       "slug": "product",
       "name": "Produto",
-      "description": "Lorem ipsum dolor sit amet",
+      "description": "Gerenciando o próximo unicórnio",
       "videos": [
         {
           "title": "Introduction to Modern Product Discovery - Teresa Torres",
@@ -53,7 +53,7 @@
     {
       "slug": "front",
       "name": "Front-end",
-      "description": "Lorem ipsum dolor sit amet",
+      "description": "O javascript que todo mundo vê",
       "videos": [
         {
           "title": "Facilitando a vida com Javascript funcional",
@@ -80,7 +80,7 @@
     {
       "slug": "data",
       "name": "Dados",
-      "description": "Lorem ipsum dolor sit amet",
+      "description": "Python e outras cositas",
       "videos": [
         {
           "title": "Can you solve my favorite interview question? (math + cs)",
@@ -107,7 +107,7 @@
     {
       "slug": "music",
       "name": "Música",
-      "description": "Lorem ipsum dolor sit amet",
+      "description": "Produção musical tips",
       "videos": [
         {
           "title": "Michael Jackson's Drummer Jonathan Moffett Performs 'Smooth Criminal'",
@@ -134,7 +134,7 @@
     {
       "slug": "back",
       "name": "Back-end",
-      "description": "Lorem ipsum dolor sit amet",
+      "description": "O javascript que quase ninguém mundo vê",
       "videos": [
         {
           "title": "When and when not to use Node.js - Node.js Basics [06] - Java Brains",

@@ -52,10 +52,9 @@ export const VideoLink = styled.a`
 `;
 
 export const VideoThumb = styled.div`
-  background-image: url('https://img.youtube.com/vi/JtiK0DOeI4A/hqdefault.jpg');
+  background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
-  width: 300px;
   height: 170px;
   border-radius: 16px;
 `;
