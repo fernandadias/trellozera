@@ -11,12 +11,12 @@ function Home() {
     <>
       <PageDefault>
         <S.HomeContainer>
-          <Vertical>Front-end</Vertical>
-          <Vertical>Dados</Vertical>
-          <Vertical>Música</Vertical>
-          <Vertical>Back-end</Vertical>
-          <Vertical>Produto</Vertical>
-          <Vertical>Design</Vertical>
+          <Vertical slug="front">Front-end</Vertical>
+          <Vertical slug="data">Dados</Vertical>
+          <Vertical slug="music">Música</Vertical>
+          <Vertical slug="back">Back-end</Vertical>
+          <Vertical slug="product">Produto</Vertical>
+          <Vertical slug="design">Design</Vertical>
         </S.HomeContainer>
       </PageDefault>
       <GlobalStyles />

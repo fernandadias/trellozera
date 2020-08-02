@@ -6,10 +6,28 @@ import Icons from './Icons';
 import * as S from './style';
 
 function ThemeTitle({ title, videoCount, slug }) {
+  let ThisIcon;
+  switch (slug) {
+    case 'design': ThisIcon = Icons.design;
+      break;
+    case 'product': ThisIcon = Icons.product;
+      break;
+    case 'front': ThisIcon = Icons.front;
+      break;
+    case 'data': ThisIcon = Icons.data;
+      break;
+    case 'music': ThisIcon = Icons.music;
+      break;
+    case 'back': ThisIcon = Icons.back;
+      break;
+    default: ThisIcon = Icons.design;
+      break;
+  }
+
   return (
     <S.ThemeTitleContainer>
       <S.ThemeIcon slug={slug}>
-        <Icons.front size={18} />
+        <ThisIcon size={18} />
       </S.ThemeIcon>
       <S.ThemeInfos>
         <S.ThemeTitle>{title}</S.ThemeTitle>
