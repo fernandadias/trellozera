@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FiCircle, FiCheckCircle } from 'react-icons/fi';
 
 import * as S from './style';
@@ -29,5 +30,9 @@ function VideoCard({ video }) {
     </S.Card>
   );
 }
+
+VideoCard.propTypes = {
+  video: PropTypes.objectOf(PropTypes.string || PropTypes.number).isRequired,
+};
 
 export default VideoCard;
