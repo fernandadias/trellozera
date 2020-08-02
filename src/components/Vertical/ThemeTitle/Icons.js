@@ -1,19 +1,19 @@
 import {
-  FiDatabase as dataIcon,
-  FiMusic as musicIcon,
-  FiCodepen as frontIcon,
-  FiCoffee as backIcon,
-  FiFeather as designIcon,
-  FiFileText as productIcon,
+  FiDatabase as data,
+  FiMusic as music,
+  FiCodepen as front,
+  FiCoffee as back,
+  FiFeather as design,
+  FiFileText as product,
 } from 'react-icons/fi';
 
 const Icons = {
-  data: dataIcon,
-  music: musicIcon,
-  front: frontIcon,
-  back: backIcon,
-  design: designIcon,
-  product: productIcon,
+  data,
+  music,
+  front,
+  back,
+  design,
+  product,
 };
 
 export default Icons;

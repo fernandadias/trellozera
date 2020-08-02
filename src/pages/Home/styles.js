@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
     display: grid;
-    grid-auto-columns: 272px;
-    grid-auto-flow: column;
-    grid-gap: 8px;
+    grid-template-columns: 480px 480px 480px 480px 480px 480px;
+   
     height: 95vh;
     position: absolute;
-    padding-top: 75px;
+    padding: 120px 0 20px;
+    overflow: hidden;
 `;
 
 export const HomesContainer = styled.div`

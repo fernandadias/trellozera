@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   background-color: var(--shapes);
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 40px;
   position: fixed;
   top: 0;
   z-index: 2;

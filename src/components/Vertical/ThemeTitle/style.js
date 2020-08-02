@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const ThemeTitleContainer = styled.div`
   display: flex;
+  margin: 0 40px 20px;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  background: var(--background);
+  padding-bottom: 20px;
 `;
 
 export const ThemeIcon = styled.span`

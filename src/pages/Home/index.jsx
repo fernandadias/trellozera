@@ -15,11 +15,8 @@ function Home() {
           <Vertical>Dados</Vertical>
           <Vertical>Música</Vertical>
           <Vertical>Back-end</Vertical>
-          <Vertical>Back-end</Vertical>
-          <Vertical>Back-end</Vertical>
-          <Vertical>Back-end</Vertical>
-          <Vertical>Back-end</Vertical>
-          <Vertical>Back-end</Vertical>
+          <Vertical>Produto</Vertical>
+          <Vertical>Design</Vertical>
         </S.HomeContainer>
       </PageDefault>
       <GlobalStyles />
