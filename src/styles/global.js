@@ -9,6 +9,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body, #root{
+    height: 100%;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
 
@@ -25,6 +29,15 @@ export default createGlobalStyle`
     --dataColor: #56EAFE;
     --backColor: #56FEB7;
 
+    --musicColorRGBA: rgba(180, 254, 86, 0.4);
+    --designColorRGBA: rgba(254, 86, 136, 0.4);
+    --productColorRGBA: rgba(254, 237, 86, 0.4);
+    --frontColorRGBA: rgba(253, 156, 87, 0.4);
+    --dataColorRGBA: rgba(11, 191, 148, 0.4);
+    --backColorRGBA: rgba(11, 191, 148, 0.4);
+
+    --themeColor: var(--backColor);
+    --themeColorRGBA: var(--backColorRGBA);
     background-color: var(--background);
 
   }

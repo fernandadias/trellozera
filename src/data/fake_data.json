@@ -1,7 +1,7 @@
 {
   "category": [
     {
-      "id": "1",
+      "slug": "design",
       "name": "Design",
       "description": "Lorem ipsum dolor sit amet",
       "videos": [
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "id": "2",
+      "slug": "produto",
       "name": "Produto",
       "description": "Lorem ipsum dolor sit amet",
       "videos": [
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "id": "3",
+      "slug": "front",
       "name": "Front-end",
       "description": "Lorem ipsum dolor sit amet",
       "videos": [
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "id": "4",
+      "slug": "data",
       "name": "Dados",
       "description": "Lorem ipsum dolor sit amet",
       "videos": [
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "id": "5",
+      "slug": "music",
       "name": "Música",
       "description": "Lorem ipsum dolor sit amet",
       "videos": [
@@ -140,7 +140,7 @@
       ]
     },
     {
-      "id": "6",
+      "slug": "back",
       "name": "Back-end",
       "description": "Lorem ipsum dolor sit amet",
       "videos": [
