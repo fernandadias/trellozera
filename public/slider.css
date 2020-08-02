@@ -1,0 +1,18 @@
+.slick-next, .slick-prev{
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 2;
+}
+
+.slick-next{
+  position: absolute;
+  bottom: 0;
+  top: unset;
+}
+
+.slick-prev{
+  position: absolute;
+  top: 0;
+  bottom: unset;
+}

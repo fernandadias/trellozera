@@ -9,7 +9,9 @@ import * as S from './style';
 function Header() {
   return (
     <S.HeaderContainer>
-      <S.Logo className="Logo" src={LogoSrc} alt="Dois retângulos verdes com o texto 'Trellozera' " title="Trellozera | Meu repositório de videos maneiros" />
+      <Link to="/">
+        <S.Logo className="Logo" src={LogoSrc} alt="Dois retângulos verdes com o texto 'Trellozera' " title="Trellozera | Meu repositório de videos maneiros" />
+      </Link>
       <S.Filters>
         <span>filtrar por: </span>
         <a href="$" className="active">todos</a>
@@ -22,7 +24,7 @@ function Header() {
           <span> não vistos</span>
         </a>
       </S.Filters>
-      <S.Button>
+      <S.Button to="video/new">
         <FiPlus size={16} />
         <span>Novo video</span>
       </S.Button>

@@ -11,13 +11,6 @@ function Vertical({ children }) {
       <ThemeTitle title={children} videoCount={12} slug="music" />
       <S.VerticalWrapper>
         <VideoCard slug="music" />
-        <VideoCard slug="product" />
-        <VideoCard slug="back" />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
       </S.VerticalWrapper>
     </S.VerticalContainer>
   );

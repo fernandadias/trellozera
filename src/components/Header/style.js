@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
   width: 100%;
@@ -49,7 +50,7 @@ export const Filters = styled.div`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   border: 0;
   height: 36px;
   padding: 8px 16px;
@@ -63,6 +64,8 @@ export const Button = styled.button`
   display: flex;
   letter-spacing: 0.08em;
   transition: all .2s ease-in-out;
+  text-decoration: none;
+  line-height: 18px;
 
   &:hover{
     box-shadow: 0px 0px 40px rgba(11, 191, 148, 0.4);
