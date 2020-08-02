@@ -1,17 +1,18 @@
 import React from 'react';
-import { FiClock } from 'react-icons/fi';
+import { FiCircle, FiCheckCircle } from 'react-icons/fi';
 
 import * as S from './style';
 
-function VideoCard({ slug }) {
+function VideoCard({ video }) {
   return (
-    <S.Card slug={slug}>
-      <S.Timestamp>
-        <FiClock />
-        <span>01/08/2020</span>
-      </S.Timestamp>
+    <S.Card>
+      <S.VideoCheck>
+        <FiCircle className="notwatched" size={20} />
+        <FiCheckCircle className="watched" size={20} />
+        <S.VideoCheckHelper>marcar como visto</S.VideoCheckHelper>
+      </S.VideoCheck>
       <S.VideoTitle>
-        [CHALLENGE] Build and deploy (with DNS / SSL) a URL Shortener in 3133.7 seconds (52 minutes)
+        {video.title}
       </S.VideoTitle>
       <S.VideoLink href="/">
         <S.VideoThumb />

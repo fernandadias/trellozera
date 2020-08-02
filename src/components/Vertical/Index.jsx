@@ -12,7 +12,9 @@ function Vertical({ category }) {
     <S.VerticalContainer>
       <ThemeTitle title={category.name} videoCount={videoCount} slug={category.slug} />
       <S.VerticalWrapper>
-        <VideoCard slug="music" />
+        {category.videos.map((video, index) => (
+          <VideoCard key={index} video={video} />
+        ))}
       </S.VerticalWrapper>
     </S.VerticalContainer>
   );

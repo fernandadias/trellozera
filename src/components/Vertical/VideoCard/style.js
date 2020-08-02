@@ -7,6 +7,7 @@ export const Card = styled.div`
   margin: 0 40px 20px;
   border: 1px solid var(--shapes);
   transition: all .2s ease-in-out;
+  position: relative;
 
   &:hover{
     box-shadow: ${(props) => (props.slug ? `0px 0px 40px var(--${props.slug}ColorRGBA)` : '0px 0px 40px var(--themeRGBA)')};
@@ -57,4 +58,38 @@ export const VideoThumb = styled.div`
   width: 300px;
   height: 170px;
   border-radius: 16px;
+`;
+
+export const VideoCheck = styled.a`
+  color: var(--infos);
+  transition: all .2s ease-in-out;
+
+  svg{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .watched{
+    display: none;
+  }
+
+  &:hover{
+    color: var(--themeColor);
+    cursor: pointer;
+    span{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+`;
+
+export const VideoCheckHelper = styled.span`
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 10px;
 `;

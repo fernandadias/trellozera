@@ -22,7 +22,7 @@ export default createGlobalStyle`
     --subTitles: #5A5E63;
     --infos: #42454F;
 
-    --musicColor: #B4FE56;
+    --musicColor: #FE5688;
     --designColor: #FE5688;
     --productColor: #FEED56;
     --frontColor: #FE9C56;
