@@ -70,13 +70,13 @@ export const VideoCheck = styled.a`
     position: absolute;
     right: 20px;
     top: 20px;
+    z-index: 2;
   }
 
   &:hover{
     color: ${(props) => (props.slug ? `var(--${props.slug}Color)` : 'var(--shapes)')};
     cursor: pointer;
     span{
-      visibility: visible;
       opacity: 1;
     }
   }
@@ -90,9 +90,11 @@ export const VideoCheck = styled.a`
 
 export const VideoCheckHelper = styled.span`
   opacity: 0;
-  visibility: hidden;
   position: absolute;
   top: 20px;
-  right: 50px;
+  right: 20px;
   font-size: 10px;
+  padding: 4px 30px 3px 10px;
+  border-radius: 20px;
+  background-color: var(--background);
 `;
