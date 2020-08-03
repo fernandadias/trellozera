@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+
 import { FiCircle, FiCheckCircle } from 'react-icons/fi';
 
 import * as S from './style';
@@ -12,14 +13,23 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-function VideoCard({ video }) {
+function handleCardClick(id) {
+  console.log(id);
+}
+
+function VideoCard({ video, slug }) {
   const image = `https://img.youtube.com/vi/${getYouTubeId(video.url)}/hqdefault.jpg`;
   return (
-    <S.Card>
-      <S.VideoCheck>
-        <FiCircle className="notwatched" size={20} />
-        <FiCheckCircle className="watched" size={20} />
-        <S.VideoCheckHelper>marcar como visto</S.VideoCheckHelper>
+    <S.Card watched={video.watched} slug={slug}>
+      <S.VideoCheck slug={slug} onClick={() => handleCardClick(video.id)}>
+        {video.watched ? (
+          <FiCheckCircle className="watched" size={20} />
+        ) : (
+            <>
+              <FiCircle className="notwatched" size={20} />
+              <S.VideoCheckHelper>marcar como visto</S.VideoCheckHelper>
+            </>
+          )}
       </S.VideoCheck>
       <S.VideoTitle>
         {video.title}
@@ -33,6 +43,7 @@ function VideoCard({ video }) {
 
 VideoCard.propTypes = {
   video: PropTypes.objectOf(PropTypes.string || PropTypes.number).isRequired,
+  slug: PropTypes.string.isRequired,
 };
 
 export default VideoCard;

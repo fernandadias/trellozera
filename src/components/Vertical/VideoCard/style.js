@@ -5,13 +5,16 @@ export const Card = styled.div`
   border-radius: 16px;
   padding: 40px;
   margin: 0 40px 20px;
-  border: 1px solid var(--shapes);
+  border: ${(props) => (props.watched ? `1px solid var(--${props.slug}Color)` : '1px solid var(--shapes)')};
   transition: all .2s ease-in-out;
   position: relative;
+  
 
   &:hover{
-    box-shadow: ${(props) => (props.slug ? `0px 0px 40px var(--${props.slug}ColorRGBA)` : '0px 0px 40px var(--themeRGBA)')};
-    border: 1px solid ${(props) => (props.slug ? `var(--${props.slug}Color)` : 'var(--themeColor)')};;
+    border: 1px solid ${(props) => (props.slug ? `var(--${props.slug}Color)` : 'var(--themeColor)')};
+    box-shadow: 0px 0px 20px ${(props) => (props.slug ? `var(--${props.slug}ColorRGBA)` : 'var(--themeColorRGBA)')};
+    transform: scale(1.02);
+    z-index:3;
   }
 `;
 
@@ -69,18 +72,19 @@ export const VideoCheck = styled.a`
     top: 20px;
   }
 
-  .watched{
-    display: none;
-  }
-
   &:hover{
-    color: var(--themeColor);
+    color: ${(props) => (props.slug ? `var(--${props.slug}Color)` : 'var(--shapes)')};
     cursor: pointer;
     span{
       visibility: visible;
       opacity: 1;
     }
   }
+
+  .watched, .watched:hover{
+    color: ${(props) => (props.slug ? `var(--${props.slug}Color)` : 'var(--shapes)')};
+  }
+
 
 `;
 

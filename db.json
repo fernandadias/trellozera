@@ -1,220 +1,188 @@
 {
-  "category": [
+  "design": [
     {
-      "slug": "design",
-      "name": "Design",
-      "description": "UI, animação, ferramentas e coisinhas coloridas",
-      "videos": [
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Pixel Art Character Design Tutorial - Step By Step!",
-          "url": "https://www.youtube.com/watch?v=vXm5VjZA4Ys"
-        },
-        {
-          "id": 2,
-          "watched": false,
-          "title": "The Importance of Keyframes / Run Cycles",
-          "url": "https://www.youtube.com/watch?v=fJosaT1sCfs"
-        },
-        {
-          "id": 3,
-          "watched": false,
-          "title": "How Netflix's 'Klaus' Made 2D Animation Look 3D | Movies Insider",
-          "url": "https://www.youtube.com/watch?v=BlU49dJhfcw"
-        },
-        {
-          "id": 4,
-          "watched": false,
-          "title": "Neumorphic Animations in Figma | Smart Animate | Figma Tutorial",
-          "url": "https://www.youtube.com/watch?v=fB7h2RxXpqA"
-        }
-      ]
+      "id": 1,
+      "watched": true,
+      "title": "Pixel Art Character Design Tutorial - Step By Step!",
+      "url": "https://www.youtube.com/watch?v=vXm5VjZA4Ys"
     },
     {
-      "slug": "product",
-      "name": "Produto",
-      "description": "Gerenciando o próximo unicórnio",
-      "videos": [
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Introduction to Modern Product Discovery - Teresa Torres",
-          "url": "https://www.youtube.com/watch?v=l7-5x0ra2tc"
-        },
-        {
-          "id": 2,
-          "watched": false,
-          "title": "What is Product Management in Fintech by Metro Bank Lead PM",
-          "url": "https://www.youtube.com/watch?v=gsdBBbvhz44"
-        },
-        {
-          "id": 3,
-          "watched": false,
-          "title": "Escaping the Build Trap - Melissa Perri",
-          "url": "https://www.youtube.com/watch?v=DmJXpI7OJuY"
-        },
-        {
-          "id": 4,
-          "watched": false,
-          "title": "#ProductCon LA: The SaaS Product Manager by PlayStation fmr PM",
-          "url": "https://www.youtube.com/watch?v=F2hPU0vuBOA&t=7s"
-        },
-        {
-          "id": 5,
-          "watched": false,
-          "title": "Best marketing strategy ever! Steve Jobs Think different",
-          "url": "https://www.youtube.com/watch?v=keCwRdbwNQY"
-        }
-      ]
+      "id": 2,
+      "watched": false,
+      "title": "The Importance of Keyframes / Run Cycles",
+      "url": "https://www.youtube.com/watch?v=fJosaT1sCfs"
     },
     {
-      "slug": "front",
-      "name": "Front-end",
-      "description": "O javascript que todo mundo vê",
-      "videos": [
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Facilitando a vida com Javascript funcional",
-          "url": "https://www.youtube.com/watch?v=qQGPpUmDSPI"
-        },
-        {
-          "id": 2,
-          "watched": false,
-          "title": "Aprendendo programação funcional com JavaScript - Anjana Vakil - JSUnconf",
-          "url": "https://www.youtube.com/watch?v=e-5obm1G_FY"
-        },
-        {
-          "id": 3,
-          "watched": false,
-          "title": "Pare de chutar e aprenda a float e sua trupe #04",
-          "url": "https://www.youtube.com/watch?v=E1tR7sYMEN0&t=821s"
-        },
-        {
-          "id": 4,
-          "watched": false,
-          "title": "Guilherme Souza - JavaScript gives you superpowers, use them",
-          "url": "https://www.youtube.com/watch?v=G8Fa8oVnakM"
-        },
-        {
-          "id": 5,
-          "watched": false,
-          "title": "Como usei JavaScript + Node.js + Socket.io para programar o Frontend e Backend do meu Jogo",
-          "url": "https://www.youtube.com/watch?v=_v6FxZNXvN4"
-        }
-      ]
+      "id": 3,
+      "watched": false,
+      "title": "How Netflix's 'Klaus' Made 2D Animation Look 3D | Movies Insider",
+      "url": "https://www.youtube.com/watch?v=BlU49dJhfcw"
     },
     {
-      "slug": "data",
-      "name": "Dados",
-      "description": "Python e outras cositas",
-      "videos": [
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Can you solve my favorite interview question? (math + cs)",
-          "url": "https://www.youtube.com/watch?v=pvimAM_SLic"
-        },
-        {
-          "id": 2,
-          "watched": false,
-          "title": "The Story of Python, by Its Creator, Guido van Rossum",
-          "url": "https://www.youtube.com/watch?v=J0Aq44Pze-w"
-        },
-        {
-          "id": 3,
-          "watched": false,
-          "title": "Introduction to Natural Language Processing - Cambridge Data Science Bootcamp",
-          "url": "https://www.youtube.com/watch?v=8S3qHHUKqYk"
-        },
-        {
-          "id": 4,
-          "watched": false,
-          "title": "2020 Predictions: Top Data Science & Analytics Trends",
-          "url": "https://www.youtube.com/watch?v=9POGzToiYCY"
-        },
-        {
-          "id": 5,
-          "watched": false,
-          "title": "Making data science useful. Cassie Kozyrkov (Google) Strata Data Conference UK 2019",
-          "url": "https://www.youtube.com/watch?v=Mukpy1QjVn8"
-        }
-      ]
+      "id": 4,
+      "watched": false,
+      "title": "Neumorphic Animations in Figma | Smart Animate | Figma Tutorial",
+      "url": "https://www.youtube.com/watch?v=fB7h2RxXpqA"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "watched": false,
+      "title": "Introduction to Modern Product Discovery - Teresa Torres",
+      "url": "https://www.youtube.com/watch?v=l7-5x0ra2tc"
     },
     {
-      "slug": "music",
-      "name": "Música",
-      "description": "Produção musical tips",
-      "videos": [
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Michael Jackson's Drummer Jonathan Moffett Performs 'Smooth Criminal'",
-          "url": "https://www.youtube.com/watch?v=bRM2Gn9nU7Q"
-        },
-        {
-          "id": 2,
-          "watched": false,
-          "title": "The Making Of Paradise Valley - John Mayer (HD)",
-          "url": "https://www.youtube.com/watch?v=3-LgJeHwBis"
-        },
-        {
-          "id": 3,
-          "watched": false,
-          "title": "Mixing Muse Guitars - Chris Lord-Alge",
-          "url": "https://www.youtube.com/watch?v=Uc3SxgT4uCw"
-        },
-        {
-          "id": 4,
-          "watched": false,
-          "title": "FL STUDIO | Fruity Voltage Controller Demo",
-          "url": "https://www.youtube.com/watch?v=oobZ4gnZwLs"
-        },
-        {
-          "id": 5,
-          "watched": false,
-          "title": "Cory Henry plays the Hammond XK5",
-          "url": "https://www.youtube.com/watch?v=Kt8_u_i-anQ"
-        }
-      ]
+      "id": 2,
+      "watched": false,
+      "title": "What is Product Management in Fintech by Metro Bank Lead PM",
+      "url": "https://www.youtube.com/watch?v=gsdBBbvhz44"
     },
     {
-      "slug": "back",
-      "name": "Back-end",
-      "description": "O javascript que quase ninguém mundo vê",
-      "videos": [
-        {
-          "id": 1,
-          "watched": false,
-          "title": "When and when not to use Node.js - Node.js Basics [06] - Java Brains",
-          "url": "https://www.youtube.com/watch?v=UCd6LorxpkY"
-        },
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Creating A GraphQL Server With Node.js And Express",
-          "url": "https://www.youtube.com/watch?v=Vs_CBxCfFHk"
-        },
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Using Clean Architecture for Microservice APIs in Node.js with MongoDB and Express",
-          "url": "https://www.youtube.com/watch?v=CnailTcJV_U"
-        },
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Most Popular Backend Frameworks | 2012-2019",
-          "url": "https://www.youtube.com/watch?v=8FQ4zW_F_Iw"
-        },
-        {
-          "id": 1,
-          "watched": false,
-          "title": "Build a Full Stack Travel Log App with Node.js, Express, MongoDB, React + Hooks and Mapbox",
-          "url": "https://www.youtube.com/watch?v=5pQsl9u_10M"
-        }
-      ]
+      "id": 3,
+      "watched": false,
+      "title": "Escaping the Build Trap - Melissa Perri",
+      "url": "https://www.youtube.com/watch?v=DmJXpI7OJuY"
+    },
+    {
+      "id": 4,
+      "watched": false,
+      "title": "#ProductCon LA: The SaaS Product Manager by PlayStation fmr PM",
+      "url": "https://www.youtube.com/watch?v=F2hPU0vuBOA&t=7s"
+    },
+    {
+      "id": 5,
+      "watched": false,
+      "title": "Best marketing strategy ever! Steve Jobs Think different",
+      "url": "https://www.youtube.com/watch?v=keCwRdbwNQY"
+    }
+  ],
+  "front": [
+    {
+      "id": 1,
+      "watched": false,
+      "title": "Facilitando a vida com Javascript funcional",
+      "url": "https://www.youtube.com/watch?v=qQGPpUmDSPI"
+    },
+    {
+      "id": 2,
+      "watched": false,
+      "title": "Aprendendo programação funcional com JavaScript - Anjana Vakil - JSUnconf",
+      "url": "https://www.youtube.com/watch?v=e-5obm1G_FY"
+    },
+    {
+      "id": 3,
+      "watched": false,
+      "title": "Pare de chutar e aprenda a float e sua trupe #04",
+      "url": "https://www.youtube.com/watch?v=E1tR7sYMEN0&t=821s"
+    },
+    {
+      "id": 4,
+      "watched": false,
+      "title": "Guilherme Souza - JavaScript gives you superpowers, use them",
+      "url": "https://www.youtube.com/watch?v=G8Fa8oVnakM"
+    },
+    {
+      "id": 5,
+      "watched": false,
+      "title": "Como usei JavaScript + Node.js + Socket.io para programar o Frontend e Backend do meu Jogo",
+      "url": "https://www.youtube.com/watch?v=_v6FxZNXvN4"
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "watched": false,
+      "title": "Can you solve my favorite interview question? (math + cs)",
+      "url": "https://www.youtube.com/watch?v=pvimAM_SLic"
+    },
+    {
+      "id": 2,
+      "watched": false,
+      "title": "The Story of Python, by Its Creator, Guido van Rossum",
+      "url": "https://www.youtube.com/watch?v=J0Aq44Pze-w"
+    },
+    {
+      "id": 3,
+      "watched": false,
+      "title": "Introduction to Natural Language Processing - Cambridge Data Science Bootcamp",
+      "url": "https://www.youtube.com/watch?v=8S3qHHUKqYk"
+    },
+    {
+      "id": 4,
+      "watched": false,
+      "title": "2020 Predictions: Top Data Science & Analytics Trends",
+      "url": "https://www.youtube.com/watch?v=9POGzToiYCY"
+    },
+    {
+      "id": 5,
+      "watched": false,
+      "title": "Making data science useful. Cassie Kozyrkov (Google) Strata Data Conference UK 2019",
+      "url": "https://www.youtube.com/watch?v=Mukpy1QjVn8"
+    }
+  ],
+  "music": [
+    {
+      "id": 1,
+      "watched": false,
+      "title": "Michael Jackson's Drummer Jonathan Moffett Performs 'Smooth Criminal'",
+      "url": "https://www.youtube.com/watch?v=bRM2Gn9nU7Q"
+    },
+    {
+      "id": 2,
+      "watched": false,
+      "title": "The Making Of Paradise Valley - John Mayer (HD)",
+      "url": "https://www.youtube.com/watch?v=3-LgJeHwBis"
+    },
+    {
+      "id": 3,
+      "watched": false,
+      "title": "Mixing Muse Guitars - Chris Lord-Alge",
+      "url": "https://www.youtube.com/watch?v=Uc3SxgT4uCw"
+    },
+    {
+      "id": 4,
+      "watched": false,
+      "title": "FL STUDIO | Fruity Voltage Controller Demo",
+      "url": "https://www.youtube.com/watch?v=oobZ4gnZwLs"
+    },
+    {
+      "id": 5,
+      "watched": false,
+      "title": "Cory Henry plays the Hammond XK5",
+      "url": "https://www.youtube.com/watch?v=Kt8_u_i-anQ"
+    }
+  ],
+  "back": [
+    {
+      "id": 1,
+      "watched": false,
+      "title": "When and when not to use Node.js - Node.js Basics [06] - Java Brains",
+      "url": "https://www.youtube.com/watch?v=UCd6LorxpkY"
+    },
+    {
+      "id": 2,
+      "watched": false,
+      "title": "Creating A GraphQL Server With Node.js And Express",
+      "url": "https://www.youtube.com/watch?v=Vs_CBxCfFHk"
+    },
+    {
+      "id": 3,
+      "watched": false,
+      "title": "Using Clean Architecture for Microservice APIs in Node.js with MongoDB and Express",
+      "url": "https://www.youtube.com/watch?v=CnailTcJV_U"
+    },
+    {
+      "id": 4,
+      "watched": false,
+      "title": "Most Popular Backend Frameworks | 2012-2019",
+      "url": "https://www.youtube.com/watch?v=8FQ4zW_F_Iw"
+    },
+    {
+      "id": 5,
+      "watched": false,
+      "title": "Build a Full Stack Travel Log App with Node.js, Express, MongoDB, React + Hooks and Mapbox",
+      "url": "https://www.youtube.com/watch?v=5pQsl9u_10M"
     }
   ]
 }

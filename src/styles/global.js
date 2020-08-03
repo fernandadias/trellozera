@@ -22,19 +22,19 @@ export default createGlobalStyle`
     --subTitles: #5A5E63;
     --infos: #42454F;
 
-    --musicColor: #FE5688;
+    --musicColor: #B4FE56;
     --designColor: #FE5688;
     --productColor: #FEED56;
     --frontColor: #FE9C56;
     --dataColor: #56EAFE;
     --backColor: #56FEB7;
 
-    --musicColorRGBA: rgba(180, 254, 86, 0.4);
-    --designColorRGBA: rgba(254, 86, 136, 0.4);
-    --productColorRGBA: rgba(254, 237, 86, 0.4);
-    --frontColorRGBA: rgba(253, 156, 87, 0.4);
-    --dataColorRGBA: rgba(11, 191, 148, 0.4);
-    --backColorRGBA: rgba(11, 191, 148, 0.4);
+    --musicColorRGBA: rgba(180, 254, 86, 0.2);
+    --designColorRGBA: rgba(254, 86, 136, 0.2);
+    --productColorRGBA: rgba(254, 237, 86, 0.2);
+    --frontColorRGBA: rgba(253, 156, 87, 0.2);
+    --dataColorRGBA: rgba(11, 191, 148, 0.2);
+    --backColorRGBA: rgba(11, 191, 148, 0.2);
 
     --themeColor: var(--backColor);
     --themeColorRGBA: var(--backColorRGBA);

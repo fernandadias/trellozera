@@ -6,13 +6,13 @@ import VideoCard from './VideoCard';
 
 import * as S from './style';
 
-function Vertical({ category }) {
+function Vertical({ children, content, slug }) {
   return (
     <S.VerticalContainer>
-      <ThemeTitle title={category.name} videoCount={2} slug={category.slug} />
+      <ThemeTitle title={children} videoCount={content.length} slug={slug} />
       <S.VerticalWrapper>
-        {category.videos.map((video) => (
-          <VideoCard key={video.id} video={video} />
+        {content.map((video) => (
+          <VideoCard key={video.id} video={video} slug={slug} />
         ))}
       </S.VerticalWrapper>
     </S.VerticalContainer>
@@ -20,6 +20,8 @@ function Vertical({ category }) {
 }
 
 Vertical.propTypes = {
-  category: PropTypes.objectOf(PropTypes.string || PropTypes.number).isRequired,
+  content: PropTypes.objectOf(PropTypes.string || PropTypes.number).isRequired,
+  children: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
 };
 export default Vertical;
