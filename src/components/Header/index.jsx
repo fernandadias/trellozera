@@ -26,7 +26,7 @@ function Header() {
       </S.Filters>
       <S.Button to="video/new">
         <FiPlus size={16} />
-        <span>Novo video</span>
+        <span>novo video</span>
       </S.Button>
     </S.HeaderContainer>
   );

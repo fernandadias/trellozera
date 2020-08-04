@@ -21,6 +21,7 @@ export default createGlobalStyle`
     --titles: #F2EBEB;
     --subTitles: #5A5E63;
     --infos: #42454F;
+    --input: #262931;
 
     --musicColor: #B4FE56;
     --designColor: #FE5688;

@@ -2,7 +2,7 @@
   "design": [
     {
       "id": 1,
-      "watched": false,
+      "watched": true,
       "title": "Pixel Art Character Design Tutorial - Step By Step!",
       "url": "https://www.youtube.com/watch?v=vXm5VjZA4Ys"
     },
@@ -28,7 +28,7 @@
   "product": [
     {
       "id": 1,
-      "watched": false,
+      "watched": true,
       "title": "Introduction to Modern Product Discovery - Teresa Torres",
       "url": "https://www.youtube.com/watch?v=l7-5x0ra2tc"
     },
@@ -60,7 +60,7 @@
   "front": [
     {
       "id": 1,
-      "watched": false,
+      "watched": true,
       "title": "Facilitando a vida com Javascript funcional",
       "url": "https://www.youtube.com/watch?v=qQGPpUmDSPI"
     },
