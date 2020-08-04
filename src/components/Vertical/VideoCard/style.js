@@ -12,35 +12,35 @@ export const Card = styled.div`
 
   &: hover{
   border: 1px solid ${(props) => (props.slug ? `var(--${props.slug}Color)` : 'var(--themeColor)')};
-  box - shadow: 0px 0px 20px ${(props) => (props.slug ? `var(--${props.slug}ColorRGBA)` : 'var(--themeColorRGBA)')};
+  box-shadow: 0px 0px 20px ${(props) => (props.slug ? `var(--${props.slug}ColorRGBA)` : 'var(--themeColorRGBA)')};
   transform: scale(1.02);
-  z - index: 3;
+  z-index: 3;
 }
 `;
 
 export const Timestamp = styled.div`
 display: flex;
-margin - bottom: 20px;
+margin-bottom: 20px;
 
 span{
-  font - weight: 600;
-  font - size: 12px;
-  line - height: 26px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 26px;
   color: var(--infos);
 }
 
 svg{
   color: var(--infos);
   height: 24px;
-  margin - right: 4px;
+  margin-right: 4px;
 }
 `;
 
 export const VideoTitle = styled.h1`
-font - weight: 600;
-font - size: 18px;
-line - height: 26px;
-margin - bottom: 20px;
+font-weight: 600;
+font-size: 18px;
+line-height: 26px;
+margin-bottom: 20px;
 `;
 
 export const VideoLink = styled.a`
@@ -55,11 +55,11 @@ div{
 `;
 
 export const VideoThumb = styled.div`
-background - image: ${({ url }) => `url(${url})`};
-background - size: cover;
-background - position: center;
+background-image: ${({ url }) => `url(${url})`};
+background-size: cover;
+background-position: center;
 height: 170px;
-border - radius: 16px;
+border-radius: 16px;
 `;
 
 export const VideoCheck = styled.a`
@@ -70,7 +70,7 @@ svg{
   position: absolute;
   right: 20px;
   top: 20px;
-  z - index: 2;
+  z-index: 2;
 }
 
   &: hover{
@@ -93,8 +93,8 @@ opacity: 0;
 position: absolute;
 top: 20px;
 right: 20px;
-font - size: 10px;
+font-size: 10px;
 padding: 4px 30px 3px 10px;
-border - radius: 20px;
-background - color: var(--background);
+border-radius: 20px;
+background-color: var(--background);
 `;
