@@ -23,24 +23,6 @@
       "watched": true,
       "title": "Neumorphic Animations in Figma | Smart Animate | Figma Tutorial",
       "url": "https://www.youtube.com/watch?v=fB7h2RxXpqA"
-    },
-    {
-      "watched": false,
-      "title": "testando",
-      "url": "https://www.youtube.com/watch?v=AAOxO4LeN1M",
-      "id": 5
-    },
-    {
-      "watched": true,
-      "title": "testando",
-      "url": "https://www.youtube.com/watch?v=AAOxO4LeN1M",
-      "id": 6
-    },
-    {
-      "watched": true,
-      "title": "Cadastrandoooo",
-      "url": "https://www.youtube.com/watch?v=gYc5zrXC52k",
-      "id": 7
     }
   ],
   "product": [
@@ -105,12 +87,6 @@
       "watched": true,
       "title": "Como usei JavaScript + Node.js + Socket.io para programar o Frontend e Backend do meu Jogo",
       "url": "https://www.youtube.com/watch?v=_v6FxZNXvN4"
-    },
-    {
-      "watched": false,
-      "title": "",
-      "url": "",
-      "id": 6
     }
   ],
   "data": [
