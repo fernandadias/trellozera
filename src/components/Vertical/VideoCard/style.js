@@ -4,7 +4,7 @@ export const Card = styled.div`
   background-color: var(--shapes);
   border-radius: 16px;
   padding: 40px;
-  margin: 0 40px 20px;
+  margin: 20px 40px;
   border: ${(props) => (props.watched ? `1px solid var(--${props.slug}Color)` : '1px solid var(--shapes)')};
   transition: all .2s ease-in-out;
   position: relative;

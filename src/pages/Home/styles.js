@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
    
     height: 95vh;
     position: absolute;
-    padding: 120px 0 20px;
+    padding: 165px 0 20px;
     overflow: hidden;
 `;
 
