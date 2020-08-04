@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const NewVideoContainer = styled.div`
    
@@ -73,7 +73,7 @@ export const NewVideoContainer = styled.div`
       margin-bottom: 16px;
     }
 
-    input, select{
+    select{
       width: 100%;
       height: 57px;
       font-size: 18px;
@@ -102,6 +102,40 @@ export const NewVideoContainer = styled.div`
     }
 `;
 
-export const NewVideosContainer = styled.div`
- 
+export const Input = styled.input`
+  width: 100%;
+  height: 57px;
+  font-size: 18px;
+  color: var(--titles);
+
+  outline: 0;
+  border: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 2px solid var(--shapes);
+  background-color: var(--input);
+
+  padding: 16px 16px;
+  margin-bottom: 45px;
+
+  resize: none;
+  border-radius: 4px;
+  transition: border-color .3s;
+
+  &:focus {
+    border-bottom-color: var(--themeColor);
+  }
+  &:focus + span {
+    transform: scale(.6) translateY(-10px);
+    color: var(--subTitles)
+  }
+  ${({ value }) => {
+    const hasValue = value.length > 0;
+    return hasValue && css`
+        + span {
+        transform: scale(.6) translateY(-10px);
+        color: var(--themeColor);
+      }
+    `;
+  }
+  }
 `;
