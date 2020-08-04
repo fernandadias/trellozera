@@ -2,25 +2,25 @@
   "design": [
     {
       "id": 1,
-      "watched": true,
+      "watched": false,
       "title": "Pixel Art Character Design Tutorial - Step By Step!",
       "url": "https://www.youtube.com/watch?v=vXm5VjZA4Ys"
     },
     {
       "id": 2,
-      "watched": false,
+      "watched": true,
       "title": "The Importance of Keyframes / Run Cycles",
       "url": "https://www.youtube.com/watch?v=fJosaT1sCfs"
     },
     {
       "id": 3,
-      "watched": false,
+      "watched": true,
       "title": "How Netflix's 'Klaus' Made 2D Animation Look 3D | Movies Insider",
       "url": "https://www.youtube.com/watch?v=BlU49dJhfcw"
     },
     {
       "id": 4,
-      "watched": false,
+      "watched": true,
       "title": "Neumorphic Animations in Figma | Smart Animate | Figma Tutorial",
       "url": "https://www.youtube.com/watch?v=fB7h2RxXpqA"
     }
@@ -34,7 +34,7 @@
     },
     {
       "id": 2,
-      "watched": false,
+      "watched": true,
       "title": "What is Product Management in Fintech by Metro Bank Lead PM",
       "url": "https://www.youtube.com/watch?v=gsdBBbvhz44"
     },
@@ -156,31 +156,31 @@
   "back": [
     {
       "id": 1,
-      "watched": false,
+      "watched": true,
       "title": "When and when not to use Node.js - Node.js Basics [06] - Java Brains",
       "url": "https://www.youtube.com/watch?v=UCd6LorxpkY"
     },
     {
       "id": 2,
-      "watched": false,
+      "watched": true,
       "title": "Creating A GraphQL Server With Node.js And Express",
       "url": "https://www.youtube.com/watch?v=Vs_CBxCfFHk"
     },
     {
       "id": 3,
-      "watched": false,
+      "watched": true,
       "title": "Using Clean Architecture for Microservice APIs in Node.js with MongoDB and Express",
       "url": "https://www.youtube.com/watch?v=CnailTcJV_U"
     },
     {
       "id": 4,
-      "watched": false,
+      "watched": true,
       "title": "Most Popular Backend Frameworks | 2012-2019",
       "url": "https://www.youtube.com/watch?v=8FQ4zW_F_Iw"
     },
     {
       "id": 5,
-      "watched": false,
+      "watched": true,
       "title": "Build a Full Stack Travel Log App with Node.js, Express, MongoDB, React + Hooks and Mapbox",
       "url": "https://www.youtube.com/watch?v=5pQsl9u_10M"
     }

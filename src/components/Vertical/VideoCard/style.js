@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Card = styled.div`
+export const Card = styled.button`
   background-color: var(--shapes);
   border-radius: 16px;
   padding: 40px;

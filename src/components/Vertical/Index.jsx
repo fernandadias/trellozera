@@ -14,14 +14,27 @@ function Vertical({ children, slug }) {
     api.get(`/${slug}`).then((response) => {
       setContent(response.data);
     });
-  }, []);
+  }, [slug]);
+
+  function handleWatched(id) {
+    const newContent = content.map((cont) => (cont.id === id ? { ...cont, watched: !cont.watched } : cont));
+    setContent(newContent);
+  }
+
+  function updateWatchedStatus(video) {
+    api.patch(`/${slug}/${video.id}`, {
+      watched: !video.watched,
+    }).then(() => {
+      handleWatched(video.id);
+    });
+  }
 
   return (
     <S.VerticalContainer>
       <ThemeTitle title={children} videoCount={content.length} slug={slug} />
       <S.VerticalWrapper>
         {content.map((video) => (
-          <VideoCard key={video.id} video={video} slug={slug} />
+          <VideoCard key={video.id} video={video} slug={slug} onClick={() => updateWatchedStatus(video)} />
         ))}
       </S.VerticalWrapper>
     </S.VerticalContainer>
