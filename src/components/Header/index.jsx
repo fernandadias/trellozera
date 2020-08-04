@@ -9,9 +9,7 @@ import LogoSrc from '../../assets/trellozera-logo.png';
 
 import * as S from './style';
 
-function Header() {
-  const [filter, setFilter] = useState('all');
-
+function Header({ setFilter, filter }) {
   return (
     <S.HeaderContainer>
       <Link to="/">

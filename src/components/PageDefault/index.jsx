@@ -3,10 +3,10 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 
-function PageDefault({ children }) {
+function PageDefault({ children, setFilter, filter }) {
   return (
     <>
-      <Header />
+      <Header setFilter={setFilter} filter={filter} />
       {children}
       <Footer />
     </>

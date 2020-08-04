@@ -11,7 +11,7 @@ import VideoCard from './VideoCard';
 
 import * as S from './style';
 
-function Vertical({ children, slug }) {
+function Vertical({ children, slug, filter }) {
   const [content, setContent] = useState([]);
   const [watchedPlay] = useSound(watchedfx);
 
@@ -40,7 +40,7 @@ function Vertical({ children, slug }) {
       <ThemeTitle title={children} videoCount={content.length} slug={slug} />
       <S.VerticalWrapper>
         {content.map((video) => (
-          <VideoCard key={video.id} video={video} slug={slug} onClick={() => updateWatchedStatus(video)} />
+          <VideoCard filter={filter} key={video.id} video={video} slug={slug} onClick={() => updateWatchedStatus(video)} />
         ))}
       </S.VerticalWrapper>
     </S.VerticalContainer>

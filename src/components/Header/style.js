@@ -46,6 +46,7 @@ export const Filters = styled.div`
     
     &.active, &:hover{
       color: var(--themeColor);
+      cursor: pointer;
     }
   }
 `;

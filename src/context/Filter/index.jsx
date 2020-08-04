@@ -1,19 +1,18 @@
-import React, { createContext, useState, useContext } from 'react';
+import { createContext, useState, useContext } from 'react';
 
-const FilterContext = createContext();
+function FilterHook() {
+  const [filter, setFilter] = useState('all');
+  const FilterContext = createContext({
+    filter, setFilter,
+  });
 
-export default function FilterProvider({ children }) {
-  const [filter, setFilter] = useState();
-
-  return (
-    <FilterContext.Provider value={{ filter, setFilter }}>
-      {children}
-    </FilterContext.Provider>
-  );
+  const applicationFilter = (newFilter) => {
+    setFilter(newFilter);
+  };
 }
 
-export function useFilter() {
+function useFilter() {
   const context = useContext(FilterContext);
-  const { filter, setFilter } = context;
-  return { filter, setFilter };
+  return context;
 }
+export { useFilter, FilterHook };

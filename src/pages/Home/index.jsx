@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import GlobalStyles from '../../styles/global';
 
@@ -8,26 +8,28 @@ import Vertical from '../../components/Vertical/Index';
 import * as S from './styles';
 
 function Home() {
+  const [filter, setFilter] = useState('all');
+
   return (
     <>
-      <PageDefault>
+      <PageDefault setFilter={setFilter} filter={filter}>
         <S.HomeContainer>
-          <Vertical slug="design">
+          <Vertical filter={filter} slug="design">
             Design
           </Vertical>
-          <Vertical slug="product">
+          <Vertical filter={filter} slug="product">
             Produto
           </Vertical>
-          <Vertical slug="back">
+          <Vertical filter={filter} slug="back">
             Back-end
           </Vertical>
-          <Vertical slug="front">
+          <Vertical filter={filter} slug="front">
             Front-end
           </Vertical>
-          <Vertical slug="data">
+          <Vertical filter={filter} slug="data">
             Dados
           </Vertical>
-          <Vertical slug="music">
+          <Vertical filter={filter} slug="music">
             Música
           </Vertical>
         </S.HomeContainer>

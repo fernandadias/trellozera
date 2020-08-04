@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { FiCircle, FiCheckCircle } from 'react-icons/fi';
 
 import * as S from './style';
 
-function VideoCard({ video, slug, onClick }) {
+function VideoCard({
+  video, slug, onClick, filter,
+}) {
   function getYouTubeId(youtubeURL) {
     return youtubeURL
       .replace(
@@ -14,9 +16,22 @@ function VideoCard({ video, slug, onClick }) {
       );
   }
 
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    if (
+      (filter === 'watched' && video.watched)
+      || (filter === 'non-watched' && !video.watched)
+      || (filter === 'all')) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  }, [filter]);
+
   const image = `https://img.youtube.com/vi/${getYouTubeId(video.url)}/hqdefault.jpg`;
   return (
-    <S.Card watched={video.watched} slug={slug}>
+    <S.Card watched={video.watched} slug={slug} visible={visible}>
       <S.VideoCheck slug={slug} onClick={() => onClick(video.id)}>
         {video.watched ? (
           <FiCheckCircle className="watched" size={20} />
