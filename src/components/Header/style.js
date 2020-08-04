@@ -74,6 +74,6 @@ export const Button = styled(Link)`
   }
 
   svg {
-    margin-right: 8px;
+    margin: 1px 8px 0 0;
   }
 `;
