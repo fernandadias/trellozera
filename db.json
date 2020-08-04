@@ -14,7 +14,7 @@
     },
     {
       "id": 3,
-      "watched": true,
+      "watched": false,
       "title": "How Netflix's 'Klaus' Made 2D Animation Look 3D | Movies Insider",
       "url": "https://www.youtube.com/watch?v=BlU49dJhfcw"
     },
@@ -25,7 +25,7 @@
       "url": "https://www.youtube.com/watch?v=fB7h2RxXpqA"
     },
     {
-      "watched": true,
+      "watched": false,
       "title": "testando",
       "url": "https://www.youtube.com/watch?v=AAOxO4LeN1M",
       "id": 5
@@ -70,7 +70,7 @@
     },
     {
       "id": 5,
-      "watched": false,
+      "watched": true,
       "title": "Best marketing strategy ever! Steve Jobs Think different",
       "url": "https://www.youtube.com/watch?v=keCwRdbwNQY"
     }
@@ -96,7 +96,7 @@
     },
     {
       "id": 4,
-      "watched": false,
+      "watched": true,
       "title": "Guilherme Souza - JavaScript gives you superpowers, use them",
       "url": "https://www.youtube.com/watch?v=G8Fa8oVnakM"
     },
@@ -134,7 +134,7 @@
     },
     {
       "id": 5,
-      "watched": false,
+      "watched": true,
       "title": "Making data science useful. Cassie Kozyrkov (Google) Strata Data Conference UK 2019",
       "url": "https://www.youtube.com/watch?v=Mukpy1QjVn8"
     }

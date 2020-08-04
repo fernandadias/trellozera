@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import useSound from 'use-sound';
+
+import watchedfx from '../../sounds/watched.mp3';
+
 import api from '../../services/api';
 
 import ThemeTitle from './ThemeTitle';
@@ -9,6 +13,7 @@ import * as S from './style';
 
 function Vertical({ children, slug }) {
   const [content, setContent] = useState([]);
+  const [watchedPlay] = useSound(watchedfx);
 
   useEffect(() => {
     api.get(`/${slug}?_sort=id&_order=desc`).then((response) => {
@@ -22,6 +27,7 @@ function Vertical({ children, slug }) {
   }
 
   function updateWatchedStatus(video) {
+    if (!video.watched) watchedPlay();
     api.patch(`/${slug}/${video.id}`, {
       watched: !video.watched,
     }).then(() => {
