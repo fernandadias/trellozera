@@ -1,4 +1,7 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { FiPlus, FiCircle, FiCheckCircle } from 'react-icons/fi';
@@ -7,6 +10,8 @@ import LogoSrc from '../../assets/trellozera-logo.png';
 import * as S from './style';
 
 function Header() {
+  const [filter, setFilter] = useState('all');
+
   return (
     <S.HeaderContainer>
       <Link to="/">
@@ -14,12 +19,23 @@ function Header() {
       </Link>
       <S.Filters>
         <span>filtrar por: </span>
-        <a href="$" className="active">todos</a>
-        <a href="$">
+        <a
+          onClick={() => setFilter('all')}
+          className={filter === 'all' ? 'active' : ''}
+        >
+          todos
+        </a>
+        <a
+          onClick={() => setFilter('watched')}
+          className={filter === 'watched' ? 'active' : ''}
+        >
           <FiCheckCircle size={16} />
           <span>vistos</span>
         </a>
-        <a href="$">
+        <a
+          onClick={() => setFilter('non-watched')}
+          className={filter === 'non-watched' ? 'active' : ''}
+        >
           <FiCircle size={16} />
           <span> não vistos</span>
         </a>
