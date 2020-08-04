@@ -102,7 +102,7 @@
     },
     {
       "id": 5,
-      "watched": false,
+      "watched": true,
       "title": "Como usei JavaScript + Node.js + Socket.io para programar o Frontend e Backend do meu Jogo",
       "url": "https://www.youtube.com/watch?v=_v6FxZNXvN4"
     }
@@ -128,7 +128,7 @@
     },
     {
       "id": 4,
-      "watched": false,
+      "watched": true,
       "title": "2020 Predictions: Top Data Science & Analytics Trends",
       "url": "https://www.youtube.com/watch?v=9POGzToiYCY"
     },

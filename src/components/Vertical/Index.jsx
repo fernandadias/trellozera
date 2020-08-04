@@ -11,7 +11,7 @@ function Vertical({ children, slug }) {
   const [content, setContent] = useState([]);
 
   useEffect(() => {
-    api.get(`/${slug}`).then((response) => {
+    api.get(`/${slug}?_sort=id&_order=desc`).then((response) => {
       setContent(response.data);
     });
   }, [slug]);
