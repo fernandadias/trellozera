@@ -4,13 +4,14 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import NewVideo from './pages/NewVideo';
+import EmptyPage from './pages/EmptyPage';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/video/new" component={NewVideo} />
-      {/* <Route component={404} /> */}
+      <Route component={EmptyPage} />
     </Switch>
   </BrowserRouter>,
   document.getElementById('root'),
