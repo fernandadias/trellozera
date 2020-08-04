@@ -30,7 +30,7 @@ function VideoCard({ video, slug, onClick }) {
       <S.VideoTitle>
         {video.title}
       </S.VideoTitle>
-      <S.VideoLink href="/">
+      <S.VideoLink href={video.url} target="_blank">
         <S.VideoThumb url={image} />
       </S.VideoLink>
     </S.Card>

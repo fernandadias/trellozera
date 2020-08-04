@@ -37,7 +37,7 @@
       "id": 6
     },
     {
-      "watched": false,
+      "watched": true,
       "title": "Cadastrandoooo",
       "url": "https://www.youtube.com/watch?v=gYc5zrXC52k",
       "id": 7
@@ -105,6 +105,12 @@
       "watched": true,
       "title": "Como usei JavaScript + Node.js + Socket.io para programar o Frontend e Backend do meu Jogo",
       "url": "https://www.youtube.com/watch?v=_v6FxZNXvN4"
+    },
+    {
+      "watched": false,
+      "title": "",
+      "url": "",
+      "id": 6
     }
   ],
   "data": [
