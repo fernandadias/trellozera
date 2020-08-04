@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import api from '../../services/api';
 
 import ThemeTitle from './ThemeTitle';
 import VideoCard from './VideoCard';
 
 import * as S from './style';
 
-function Vertical({ children, content, slug }) {
+function Vertical({ children, slug }) {
+  const [content, setContent] = useState([]);
+
+  useEffect(() => {
+    api.get(`/${slug}`).then((response) => {
+      setContent(response.data);
+    });
+  }, []);
+
   return (
     <S.VerticalContainer>
       <ThemeTitle title={children} videoCount={content.length} slug={slug} />
@@ -20,7 +29,6 @@ function Vertical({ children, content, slug }) {
 }
 
 Vertical.propTypes = {
-  content: PropTypes.objectOf(PropTypes.string || PropTypes.number).isRequired,
   children: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
 };

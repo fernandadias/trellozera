@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { FiCircle, FiCheckCircle } from 'react-icons/fi';
+import api from '../../../services/api';
 
 import * as S from './style';
 
@@ -13,15 +14,20 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-function handleCardClick(id) {
-  console.log(id);
+function handleCardClick(id, slug, watched) {
+  const changeWatched = !watched;
+  api.patch(`/${slug}/${id}`, {
+    watched: changeWatched,
+  }).then((response) => {
+
+  });
 }
 
 function VideoCard({ video, slug }) {
   const image = `https://img.youtube.com/vi/${getYouTubeId(video.url)}/hqdefault.jpg`;
   return (
     <S.Card watched={video.watched} slug={slug}>
-      <S.VideoCheck slug={slug} onClick={() => handleCardClick(video.id)}>
+      <S.VideoCheck slug={slug} onClick={() => handleCardClick(video.id, slug, video.watched)}>
         {video.watched ? (
           <FiCheckCircle className="watched" size={20} />
         ) : (
