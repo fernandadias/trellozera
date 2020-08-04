@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import { FiCircle, FiCheckCircle } from 'react-icons/fi';
 
+import Modal from '../../Modal';
+
 import * as S from './style';
 
 function VideoCard({
@@ -31,24 +33,26 @@ function VideoCard({
 
   const image = `https://img.youtube.com/vi/${getYouTubeId(video.url)}/hqdefault.jpg`;
   return (
-    <S.Card watched={video.watched} slug={slug} visible={visible}>
-      <S.VideoCheck slug={slug} onClick={() => onClick(video.id)}>
-        {video.watched ? (
-          <FiCheckCircle className="watched" size={20} />
-        ) : (
-            <>
-              <FiCircle className="notwatched" size={20} />
-              <S.VideoCheckHelper>marcar como visto</S.VideoCheckHelper>
-            </>
-          )}
-      </S.VideoCheck>
-      <S.VideoTitle>
-        {video.title}
-      </S.VideoTitle>
-      <S.VideoLink href={video.url} target="_blank">
-        <S.VideoThumb url={image} />
-      </S.VideoLink>
-    </S.Card>
+    <>
+      <S.Card watched={video.watched} slug={slug} visible={visible}>
+        <S.VideoCheck slug={slug} onClick={() => onClick(video.id)}>
+          {video.watched ? (
+            <FiCheckCircle className="watched" size={20} />
+          ) : (
+              <>
+                <FiCircle className="notwatched" size={20} />
+                <S.VideoCheckHelper>marcar como visto</S.VideoCheckHelper>
+              </>
+            )}
+        </S.VideoCheck>
+        <S.VideoTitle>
+          {video.title}
+        </S.VideoTitle>
+        <S.VideoLink href={video.url} target="_blank">
+          <S.VideoThumb url={image} />
+        </S.VideoLink>
+      </S.Card>
+    </>
   );
 }
 
